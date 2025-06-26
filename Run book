@@ -1,0 +1,44 @@
+A **runbook** (or **run book**) is a detailed set of instructions or procedures that IT, DevOps, or operations teams use to **handle specific tasks, processes, or incidents** in a system or network environment. It's essentially a **manual or playbook** that outlines how to respond to and resolve common or critical scenarios.
+
+### 🔧 Common Uses of a Runbook
+
+* **Incident response:** Steps to take when a server goes down, a service crashes, etc.
+* **Routine maintenance:** How to restart services, back up databases, apply patches.
+* **Deployment procedures:** How to roll out new code or configuration changes.
+* **Onboarding:** How to set up a new employee or server.
+
+---
+
+### 🧾 What’s Typically in a Runbook?
+
+A good runbook includes:
+
+* **Title and purpose**
+* **Step-by-step instructions**
+* **Who is responsible**
+* **Preconditions or prerequisites**
+* **Expected outcomes**
+* **Rollback steps** in case something goes wrong
+* **References** to logs, dashboards, or monitoring tools
+
+---
+
+### 🧠 Runbook vs. Playbook
+
+* **Runbook**: Usually more technical and detailed, meant for execution.
+* **Playbook**: Broader; can include decision trees, escalation paths, and runbooks as components.
+
+---
+
+### 📘 Example Scenario
+
+**Runbook: Restarting a Web Server**
+
+1. SSH into the server.
+2. Run `sudo systemctl restart nginx`.
+3. Check status with `sudo systemctl status nginx`.
+4. Confirm traffic flow on the load balancer.
+5. Notify the team in Slack if completed successfully.
+
+---
+
